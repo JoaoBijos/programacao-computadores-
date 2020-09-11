@@ -57,14 +57,29 @@ function calculaMaiorIdade(vet){
             maiorIdade = vet[i].idade // autaliza a maior idade
         }
     }
+    console.log(`Maior idade = ${maiorIdade}`)
 }
 
 function calculaQtde(vet){
     console.log(`Entrou na função calcula quantidade`)
+    let qtde = 0
+    for(let i = 1; i < vet.length; i++){
+        if(((vet[i].sexo = `F`) && (vet[i].idade >= 20) && (vet[i].idade <= 45)) || ((vet[i].olhos = `A`) && (vet[i].altura < 1.70))){
+            qtde++
+        }
+    }
+    console.log(`Quantidade = ${qtde}`)
 }
 
 function calculaPercentual(vet){
     console.log(`Entrou na função calcula percentual`)
+    let conta = 0
+    for(let i = 1; i < vet.length; i++){
+        if(vet[i].sexo = `M`){
+            conta++
+        }
+    }
+    console.log(`Percentual de homens = ${(conta/vet.length)*100}`)
 }
 
 
